@@ -1,0 +1,28 @@
+<h4><span class='btn btn-danger'>Immediate</span> | Routing from home to details view is broken</h4>
+<div class="well well-sm">
+  Navigation from home to details view stops working. Steps to reproduce:<br/><br/>  
+  <ol>
+    <li>Open Application</li>
+    <li>Login</li>
+    <li>Navigate to list view</li>
+    <li>Enter some data click save</li>
+    <li>Try to navigate to details view</li>
+  </ol>
+      Expected behavior:<br><br>
+  <ol>
+    <li>Navigation to details view should work as before</li>
+  </ol>
+</div>
+<h4>Estimations: 
+  <small>22 Hours and % Done </small>
+  <progressbar class="progress-striped active" max="100" value="60" type="success" style="width: 100px;display: inline-block;margin-bottom: -5px;"><i>60%</i></progressbar>
+</h4>
+<h4>Screenshots: </h4>
+<carousel style="width: 500px;">
+  <slide ng-repeat="item in carousel" active="item.active">
+    <img ng-src="{{item.image}}">
+    <div class="carousel-caption">
+      <p>{{item.text}}</p>
+    </div>
+  </slide>
+</carousel>
